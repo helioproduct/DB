@@ -1,0 +1,10 @@
+UPDATE clients SET date_of_birth = '1985-01-15', gender = 'мужской' WHERE id = 1;
+UPDATE clients SET date_of_birth = '1990-05-20', gender = 'женский' WHERE id = 2;
+UPDATE clients SET date_of_birth = '1982-03-10', gender = 'мужской' WHERE id = 3;
+UPDATE clients SET date_of_birth = '1987-07-25', gender = 'женский' WHERE id = 4;
+UPDATE clients SET date_of_birth = '1975-11-30', gender = 'мужской' WHERE id = 5;
+UPDATE clients SET date_of_birth = '1989-02-17', gender = 'женский' WHERE id = 6;
+UPDATE clients SET date_of_birth = '1980-08-05', gender = 'мужской' WHERE id = 7;
+UPDATE clients SET date_of_birth = '1992-12-12', gender = 'женский' WHERE id = 8;
+UPDATE clients SET date_of_birth = '1978-04-22', gender = 'мужской' WHERE id = 9;
+UPDATE clients SET date_of_birth = '1983-09-16', gender = 'женский' WHERE id = 10;
