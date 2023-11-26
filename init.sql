@@ -67,3 +67,10 @@ CREATE TABLE client_services (
     FOREIGN KEY (client_id) REFERENCES clients(id),
     FOREIGN KEY (service_id) REFERENCES services(id)
 );
+
+
+ALTER TABLE clients
+ADD COLUMN date_of_birth DATE,
+ADD COLUMN gender VARCHAR(10);
+
+

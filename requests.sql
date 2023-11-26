@@ -78,7 +78,7 @@ WHERE check_out_date > NOW()
 
 
 -- using case
-SELECT 
+SELECT FROM
     clients.first_name,
     clients.last_name,
     
