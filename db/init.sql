@@ -1,4 +1,4 @@
-CREATE USER docker;
+CREATE USER hoteladmin;
 
 DO $$
 BEGIN
