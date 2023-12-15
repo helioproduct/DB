@@ -1,22 +1,19 @@
-from flask import Blueprint, request, jsonify, render_template
+from flask import Blueprint
+from . import db
 
 auth = Blueprint("auth", __name__)
 
 
-@auth.route("/login", methods=["POST"])
+@auth.route("/login")
 def login():
-    return jsonify({"message": "Succeess login", "authorized": True}), 200
+    return "Login"
 
 
-@auth.route("/login-page", methods=["GET"])
-def login_page():
-    return render_template("/auth/login.html")
+@auth.route("/signup")
+def signup():
+    return "Signup"
 
 
-@auth.route("/check", methods=["GET"])
-def check():
-    # Эта заглушка всегда подтверждает аутентификацию
-    return (
-        jsonify({"message": "Пользователь аутентифицирован", "authorized": True}),
-        200,
-    )
+@auth.route("/logout")
+def logout():
+    return "Logout"
