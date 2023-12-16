@@ -1,5 +1,4 @@
 from flask import Flask
-
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
@@ -7,9 +6,9 @@ db = SQLAlchemy()
 
 def create_app():
     main = Flask(__name__)
-
-    main.config["SECRET_KEY"] = "secret-key-goes-here"
-    main.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite"
+    main.config[
+        "SQLALCHEMY_DATABASE_URI"
+    ] = "postgresql://hoteladmin:tgyuh980pj@127.0.0.1:5432/hotel"
 
     db.init_app(main)
 
