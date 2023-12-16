@@ -4,7 +4,7 @@ services:
       container_name: postgres_container
       image: postgres:13.3
       build:
-        context: ./db
+        context: ./docker/db
         dockerfile: Dockerfile
       environment:
         POSTGRES_DB: "hotel"
@@ -15,6 +15,23 @@ services:
         - postgres:/data/postgres 
       ports:
         - "5432:5432"
+
+
+  postgres_empty:
+      image: postgres
+      restart: always
+      environment:
+        POSTGRES_PASSWORD: example
+      ports:
+        - 5433:5433
+
+  postgres_develompent:
+      image: postgres
+      restart: always
+      environment:
+        POSTGRES_PASSWORD: example
+      ports:
+        - 5434:5434
 
   pgadmin:
     container_name: pgadmin_container
